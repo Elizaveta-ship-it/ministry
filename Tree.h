@@ -11,7 +11,7 @@ public:
     std::string name;
     int bribe;
 
-    // Представление дерева: первый ребёнок и следующий брат
+    // Представление дерева: первый ребёнок и следующий ребёнок
     std::shared_ptr<Node> firstChild;
     std::shared_ptr<Node> nextChild;
     std::shared_ptr<Node> parent;
@@ -33,7 +33,7 @@ private:
     int computeMinCost(std::shared_ptr<Node> node);
     void printTreeRec(std::shared_ptr<Node> node, int level);
 
-    // Вывод пути минимальной стоимости (без использования контейнеров)
+    // Вывод пути минимальной стоимости
     void printOptimalPath(std::shared_ptr<Node> node, bool isFirst);
 
     // Вывод детализации пути
