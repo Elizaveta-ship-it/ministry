@@ -62,7 +62,7 @@ void Tree::addOfficial(int id, const std::string& name, int bribe, int parentId)
 
         auto parent = findNode(root, parentId);
         if (!parent) {
-            throw NotFoundException("Родитель с ID " + std::to_string(parentId) + " не найден!");
+            throw NotFoundException("Чиновник с ID " + std::to_string(parentId) + " не найден!");
         }
         addChild(parent, newNode);
     }
